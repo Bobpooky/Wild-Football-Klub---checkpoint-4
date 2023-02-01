@@ -1,13 +1,21 @@
 import { Routes, Route } from "react-router-dom";
+import ManageTeams from "@pages/ManageTeams";
+import ManageClub from "@pages/ManageClub";
+import Match from "@pages/Match";
+import Accueil from "@pages/Accueil";
+import Navbar from "@components/navbar/Navbar";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <p>coucou</p>
-
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/ManageTeams" element={<ManageTeams />} />
+        <Route path="/ManageClub" element={<ManageClub />} />
+        <Route path="/Match" element={<Match />} />
       </Routes>
     </div>
   );
