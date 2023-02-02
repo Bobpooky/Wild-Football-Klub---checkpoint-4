@@ -5,7 +5,7 @@ const teamModel = require("../models/team.models");
 const getTeam = (req, res) => {
   teamModel
     .getAllTeam()
-    .then((result) => {
+    .then(([result]) => {
       res.status(200).send(result);
     })
     .catch((err) => {
@@ -16,7 +16,7 @@ const getTeam = (req, res) => {
 const getTeamById = (req, res) => {
   teamModel
     .getAllTeamById(req.params.id)
-    .then((result) => {
+    .then(([result]) => {
       res.status(200).send(result);
     })
     .catch((err) => {
@@ -27,9 +27,9 @@ const getTeamById = (req, res) => {
 // post
 
 const postTeam = (req, res) => {
-  const { teamName, avAtk, avDef } = req.body;
+  const { teamName, avAtk, avDef, shirt } = req.body;
   teamModel
-    .postTeam(teamName, avAtk, avDef)
+    .postTeam(teamName, avAtk, avDef, shirt)
     .then(() => {
       return res.sendStatus(201);
     })

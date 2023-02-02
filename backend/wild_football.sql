@@ -28,16 +28,17 @@ DROP TABLE IF EXISTS `wild_football`.`teams` ;
 CREATE TABLE IF NOT EXISTS `wild_football`.`teams` (
   `team_id` INT NOT NULL AUTO_INCREMENT,
   `teamName` VARCHAR(45) NOT NULL,
-  `avAtk` INT NOT NULL,
-  `avDef` INT NOT NULL,
+  `avAtk` INT,
+  `avDef` INT,
+  `shirt` VARCHAR(50),
   PRIMARY KEY (`team_id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
-INSERT INTO `wild_football`.`teams` (`team_id`, `teamName`, `avAtk`, `avDef`) VALUES 
-('1', 'Wild Bad Asses', '0', '0');
+INSERT INTO `wild_football`.`teams` (`team_id`, `teamName`, `avAtk`, `avDef`,`shirt`) VALUES 
+('1', 'Wild Bad Asses', '0', '0', '#e11414');
 -- -----------------------------------------------------
 -- Table `wild_football`.`players`
 -- -----------------------------------------------------

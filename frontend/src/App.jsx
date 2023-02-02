@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import ManageTeams from "@pages/ManageTeams";
+import ManageTeams from "@pages/ManageTeamsAndPlayers";
 import ManageClub from "@pages/ManageClub";
 import Match from "@pages/Match";
 import Accueil from "@pages/Accueil";
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Home" element={<Home />} />
