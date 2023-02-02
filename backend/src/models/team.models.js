@@ -11,10 +11,10 @@ const getAllTeamById = (id) => {
 };
 
 // post
-const postTeam = (teamName, avAtk, avDef) => {
+const postTeam = (teamName, avAtk, avDef, shirt) => {
   return database.query(
-    "INSERT INTO teams (team_name, avAtk, avDef) VALUE (?,?,?)",
-    [teamName, avAtk, avDef]
+    "INSERT INTO teams (teamName, avAtk, avDef, shirt) VALUE (?,?,?,?)",
+    [teamName, avAtk, avDef, shirt]
   );
 };
 

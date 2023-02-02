@@ -1,0 +1,125 @@
+.players_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  gap: 5%;
+
+  &_formCtn {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    &_btn {
+      width: 80px;
+      height: auto;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 10px;
+      color: white;
+      background-color: lightcoral;
+      box-shadow: 6px 8px 8px -7px rgba(0, 0, 0, 0.56);
+    }
+
+    &_form {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 70%;
+        height: auto;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+  }
+
+  &_cardContainer {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1%;
+    flex-wrap: wrap;
+
+    .jeanmich {
+      color: white;
+    }
+
+    &_bobby {
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+
+      &_card {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 1px solid, gray;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 6px 8px 8px -7px rgba(0, 0, 0, 0.56);
+
+        &_shirtCtn {
+          position: relative;
+          background-color: transparent;
+
+          &_shirt {
+            color: lightcoral;
+            width: 100px;
+            height: auto;
+            background-color: transparent;
+          }
+
+          &_pseudo {
+            position: absolute;
+            bottom: 60px;
+            left: 35px;
+            background-color: transparent;
+            color: white;
+          }
+
+          &_number {
+            position: absolute;
+            bottom: 35px;
+            left: 40px;
+            font-size: 25px;
+            background-color: transparent;
+            color: white;
+          }
+        }
+
+        &_details {
+          text-align: center;
+          background-color: transparent;
+
+          div {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
