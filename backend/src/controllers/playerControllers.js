@@ -13,16 +13,16 @@ const getPlayer = (req, res) => {
     });
 };
 
-const getPlayerById = (req, res) => {
-  playerModel
-    .getAllPlayerById(req.params.id)
-    .then(([result]) => {
-      res.status(200).send(result);
-    })
-    .catch((err) => {
-      console.warn(err);
-    });
-};
+// const getPlayerById = (req, res) => {
+//   playerModel
+//     .getAllPlayerById(req.params.id)
+//     .then(([result]) => {
+//       res.status(200).send(result);
+//     })
+//     .catch((err) => {
+//       console.warn(err);
+//     });
+// };
 
 // post
 
@@ -39,6 +39,6 @@ const postPlayer = (req, res) => {
 };
 module.exports = {
   getPlayer,
-  getPlayerById,
+  // getPlayerById,
   postPlayer,
 };

@@ -5,6 +5,7 @@ const database = require("../../database");
 const getAllPlayer = () => {
   return database.query("SELECT * From players");
 };
+
 // const getAllPlayerById = (id) => {
 //   return database.query("SELECT * FROM players, WHERE id=?", [id]);
 // };
