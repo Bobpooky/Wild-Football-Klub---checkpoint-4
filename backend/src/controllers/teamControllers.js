@@ -13,16 +13,16 @@ const getTeam = (req, res) => {
     });
 };
 
-const getTeamById = (req, res) => {
-  teamModel
-    .getAllTeamById(req.params.id)
-    .then(([result]) => {
-      res.status(200).send(result);
-    })
-    .catch((err) => {
-      console.warn(err);
-    });
-};
+// const getTeamById = (req, res) => {
+//   teamModel
+//     .getAllTeamById(req.params.id)
+//     .then(([result]) => {
+//       res.status(200).send(result);
+//     })
+//     .catch((err) => {
+//       console.warn(err);
+//     });
+// };
 
 // post
 
@@ -39,6 +39,6 @@ const postTeam = (req, res) => {
 };
 module.exports = {
   getTeam,
-  getTeamById,
+  // getTeamById,
   postTeam,
 };
