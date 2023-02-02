@@ -1,7 +1,5 @@
 ## Installation & Utilisation
 
-### Pour commencer un projet
-
 - Sur VSCode, installer les plugins **Prettier - Code formatter** et **ESLint** et les configurer
 - Cloner ce dépôt, se rendre à l'intérieur
 - Lancer la commande `npm run setup`
