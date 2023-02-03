@@ -23,14 +23,14 @@ function ManageTeam() {
       <div className="team_container">
         <div className="team_container_btnCont">
           <button
-            className="team_container_btnCont_teamBtn"
+            className={showTeam === true ? "team_container_btnCont_teamBtn" : "team_container_btnCont_teamBtnOff"}
             onClick={handleCreateTeam}
             type="button"
           >
             Create a team
           </button>
           <button
-            className="team_container_btnCont_playersBtn"
+            className={showTeam === false ? "team_container_btnCont_playersBtn" : "team_container_btnCont_playersBtnOff"}
             onClick={handlePlayers}
             type="button"
           >
