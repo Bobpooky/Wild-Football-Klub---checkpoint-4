@@ -1,9 +1,10 @@
 
-## Description
+Description
 
-This repository is a simple Express MVC structure from scratch.
+Wild Code School Checkpoint 4 project : "Wild Football Klub.
+A small app to manage a football team of Wilders.
 
-## Steps
+Steps
 
 1. Clone the repo from Github.
 2. Run `npm install`.
