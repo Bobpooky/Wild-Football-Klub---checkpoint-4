@@ -3,6 +3,10 @@ Description
 
 Wild Code School Checkpoint 4 project : "Wild Football Klub.
 A small app to manage a football team of Wilders.
+The objective was to create 5 pages. Currently the home page and the manage teams page are built.
+On this last page, you can create a team  and create players. I didn't get the time to add a delete feature in the fron t and the back but it was planned.
+Next steps for the app will be to create a page to add player in teams and set a match play function on the dedicated page.
+Finally I will create a page to manage the club, which will show technologies I learned at the wild code school with the possibility to add and manage them.
 
 Steps
 
